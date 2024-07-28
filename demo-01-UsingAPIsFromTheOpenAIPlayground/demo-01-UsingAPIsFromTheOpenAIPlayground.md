@@ -1,57 +1,45 @@
-#############################################
-Exploring the Open AI Playground
-#############################################
+# Exploring the Open AI Playground
 
 # Go to
 
 https://platform.openai.com/docs/overview
 
-# Show all the different API possible here
+1.  Show all the different API possible here
+2. Click on "Overview" on the left and you get a summary of all the models
+3. Click on "Models" and see what models are available to use
+4. Click through to one of the models -> will take us to the intro page for all models
+5. Look at the all the models and discuss them
+6. Look at the details
 
-# Click on "Overview" on the left and you get a summary of all the models
 
-# Click on "Models" and see what models are available to use
-
-# Click through to one of the models -> will take us to the intro page for all models
-
-# Look at the all the models and discuss them
-
-# Look at the details
-
-context window
-
-input and output modalities
-
-price per 1mm tokens
-
-# Notice that every model has versions (with release dates)
-
-------------------------------------------------------
-# You need to pay to use these APIs
-
-# Click on the account on the top-right
-
-# Click on billing and show that we have about $5 worth of spend left
+- context window
+- input and output modalities
+- price per 1mm tokens
+- Notice that every model has versions (with release dates)
 
 ------------------------------------------------------
 
-# Click on Dashboard on the top-right and this will take you to the Open AI Playground
+1. You need to pay to use these APIs
+2. Click on the account on the top-right
+3. Click on billing and show that we have about $5 worth of spend left
 
-# Note that there are 3 options on the left - explain each
+------------------------------------------------------
 
-Chat
-Assistants
-Completions
+1. Click on Dashboard on the top-right and this will take you to the Open AI Playground
+2. Note that there are 3 options on the left - explain each
+- Chat
+- Assistants
+- Completions
 
 #############################################
 
-# With access to built-in tools like code interpreter, the Assistants API simplifies deterministic tasks like data analysis or code development. The Chat Completions API, on the other hand, offers agility and efficiency catering to scenarios where simplicity and complete control of the architecture is important.
+With access to built-in tools like code interpreter, the Assistants API simplifies deterministic tasks like data analysis or code development. The Chat Completions API, on the other hand, offers agility and efficiency catering to scenarios where simplicity and complete control of the architecture is important.
 
-# Notes:
-# The Assistants API is a powerful tool available on Azure OpenAI that enables developers to create sophisticated AI assistants within their applications. Key features include: 
-# Instructions: Developers can provide specific instructions to tailor the personality and capabilities of the assistant. 
-# Tools: Assistants can leverage various tools, including those hosted by OpenAI (such as Code Interpreter and Knowledge Retrieval) or custom-built tools hosted externally. 
-# Threads: Assistants can access persistent threads, allowing them to maintain context across multiple interactions. Threads store messages and automatically handle content truncation to fit within the model's context window limit. 
+## Notes:
+1. The Assistants API is a powerful tool available on Azure OpenAI that enables developers to create sophisticated AI assistants within their applications. Key features include: 
+2. Instructions: Developers can provide specific instructions to tailor the personality and capabilities of the assistant. 
+3. Tools: Assistants can leverage various tools, including those hosted by OpenAI (such as Code Interpreter and Knowledge Retrieval) or custom-built tools hosted externally. 
+4. Threads: Assistants can access persistent threads, allowing them to maintain context across multiple interactions. Threads store messages and automatically handle content truncation to fit within the model's context window limit. 
 # Files: Assistants have access to files in different formats, either during their creation or within conversation threads with users. 
 # Advanced Features: The Assistant API offers advanced features such as conversation threading, code execution, and data retrieval, making it suitable for applications requiring detailed context management and prolonged conversations. 
 # Independence: Each assistant can initiate and manage multiple independent message threads, enhancing its multitasking capabilities. 
@@ -63,21 +51,19 @@ Completions
 # Agility: It is more suitable for agile and direct responses, making it ideal for scenarios where quick, straightforward interactions are preferred. 
 # Efficiency: The Chat Completions API is lightweight and efficient, making it suitable for simple AI applications where resource consumption is a concern. 
 
-#############################################
 
-# Let's work with the Chat API first
+##  Let's work with the Chat API first
 
 --------------------------------------------------------
-Open AI Playground
+## Open AI Playground
 --------------------------------------------------------
 
-# Click on the models drop down and show all the models (make sure you click on show more)
+1. Click on the models drop down and show all the models (make sure you click on show more)
 
-# Go back to the gpt-3.5-turbo model
+2. Go back to the gpt-3.5-turbo model
+- "Model": "gpt-3.5-turbo-16k"
 
-"Model": "gpt-3.5-turbo-16k"
-
-# Don't set anything in system
+3.Don't set anything in system
 
 # Prompt
 

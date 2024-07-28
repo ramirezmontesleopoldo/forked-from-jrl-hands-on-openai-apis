@@ -1,59 +1,51 @@
-###################################################
-Install and set up Open AI
-###################################################
 
-# Go to this URL
+# Install and set up Open AI
+
+1. Go to this URL
 https://platform.openai.com/docs/quickstart
 
-# Show that it has steps for 
-
-cURL
-python
-NodeJS
+2. Show that it has steps for 
+- cURL
+- python
+- NodeJS
 
 # Let's show that you can hit the API using cURL
 
 # On the terminal
-
+```bash
 curl --version
 
 # Set up the API key
-
 # Go the the Open AI page
-
 # Click on API keys on the left sidebar
-
 Name: hands-on-openai-apis
 
 # Create and copy the key over
-
 export OPENAI_API_KEY='your-api-key-here'
+```
 
 ----------------------------------------------
 # Make API requests using cURL
 ----------------------------------------------
 
 
-# Now let's make a curl request to the API
-# Replace $OPENAI_API_KEY with the actual API token when you make the request
+1. Now let's make a curl request to the API
+2. Replace $OPENAI_API_KEY with the actual API token when you make the request
 
 
-# Let's retrieve all the models available (replace the key in the header)
-
+```bash
+### Let's retrieve all the models available (replace the key in the header)
 curl https://api.openai.com/v1/models \
-  -H "Authorization: Bearer $OPENAI_API_KEY"
+-H "Authorization: Bearer $OPENAI_API_KEY"
 
 # Show large number of models returned
 
 # Let's retrieve the details of some specific models
-
-
 curl https://api.openai.com/v1/models/dall-e-3 \
-  -H "Authorization: Bearer $OPENAI_API_KEY"
+-H "Authorization: Bearer $OPENAI_API_KEY"
 
 
 # Now let's send a prompt using the API
-
 # https://platform.openai.com/docs/api-reference/chat/object
 
 curl https://api.openai.com/v1/chat/completions \
@@ -71,7 +63,6 @@ curl https://api.openai.com/v1/chat/completions \
 
 
 # Explain the details in the result (no system fingerprint)
-
 
 curl https://api.openai.com/v1/chat/completions \
 -H "Content-Type: application/json"   \
@@ -91,8 +82,6 @@ curl https://api.openai.com/v1/chat/completions \
   }'
 
 # Explain the details in the result (note the system fingerprint)
-
-
 curl https://api.openai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
@@ -117,27 +106,26 @@ curl https://api.openai.com/v1/chat/completions \
       }
     ]
   }'
+```
 
 
 ----------------------------------------------
-# Set up virtual environment
+## Set up virtual environment
 ----------------------------------------------
+
 # Behind the scenes
-
 # Required libraries in virtual environment
 
+```bash
 pip install --upgrade openai
-
 openai --version
-
 pip install pandas matplotlib
 
 # Start jupyter notebook
-
 jupyter notebook
+```
 
 # Open notebook
-
 demo-02-ChatAPICompletionsAPI
 
 # IMPORTANT: Make sure the notebooks is using the openai_venv virtual environment
